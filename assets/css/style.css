@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Zenzai Itacha";
+    src: url("../fonts/Zenzai-Itacha.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,24 +16,34 @@ body {
 
 /* Header */
 header {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     width: 100%;
+    position: fixed;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 2px #3a3a3a;
+}
+
+
+header a {
+    text-decoration: none;
 }
 
 #logo {
-    color: white;
+    color: black;
     text-align: left;
-}
-
-#logo a {
     text-decoration: none;
+    font-family: "Zenzai Itacha";
+    margin-left: 2rem;
+    font-size: 2.5rem;
 }
 
 /* Menu */
 #menu {
     display: flex;
     justify-content: space-evenly;
+    list-style-type: none;
+    display: none;
 }
 
 #menu li a {
@@ -37,14 +52,24 @@ header {
 
 #hero {
     min-height: 100vh;
+    background-color: #222;
+    /* background-image: url("../images/hero-bw.jpg");
+    background-size: cover;
+    background-position-x: center; */
+}
+
+.overlay {
+    background-color: black;
 }
 
 #socials {
-    background-color: black;
+    background-color: white;
+    color: black;
     display: flex;
     justify-content: space-evenly;
 }
 
 #socials li a {
     text-decoration: none;
+    list-style-type: none;
 }
